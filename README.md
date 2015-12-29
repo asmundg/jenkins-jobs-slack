@@ -21,6 +21,7 @@ Slack publisher and config for jenkins job builder
             room: '#jenkins'
             token: secret
             team-domain: example.com
+            include-custom-message: true
             custom-message: message
 
       publishers:
