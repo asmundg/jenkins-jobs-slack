@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='jenkins-jobs-slack',
-    version='0.3.2',
+    version='0.3.3',
     description='Jenkins Job Builder Slack Notifier',
     url='https://github.com/asmundg/jenkins-jobs-slack',
     author='Aasmund Grammeltvedt',
@@ -10,8 +10,6 @@ setup(
     license='MIT license',
     install_requires=[],
     entry_points={
-        'jenkins_jobs.properties': [
-            'slack = jenkins_jobs_slack.slack:slack_properties'],
         'jenkins_jobs.publishers': [
             'slack = jenkins_jobs_slack.slack:slack_publisher']},
     packages=['jenkins_jobs_slack'],
